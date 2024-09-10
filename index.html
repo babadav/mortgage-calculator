@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Mortgage Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/images/favicon-32x32.png" />
+
+    <link href="assets/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="mortgage-calculator-container">
+      <section class="form-wrap">
+        <div class="form-header">
+          <h1>Mortage Calculator</h1>
+          <button class="clear-all" type="reset">Clear All</button>
+        </div>
+
+        <form action="">
+          <div class="mortgage-amount-input-wrap input-group">
+            <label for="mortgage-amount-input">Mortgage Amount</label>
+            <input
+              type="number"
+              id="mortgage-amount-input"
+              name="mortgage-amount"
+              aria-label="Enter the mortgage amount in pounds"
+              title="Mortgage Amount"
+              placeholder=""
+              required
+              value="300000"
+            />
+            <span class="input-symbol"></span>
+            <span class="error-message">This field is required</span>
+          </div>
+          <div class="double-input-wrap">
+            <div class="mortgage-term-input-wrap input-group">
+              <label for="mortgage-term">Mortgage Term</label>
+              <input
+                type="number"
+                id="mortgage-term-input"
+                name="mortgage-term"
+                aria-label="Enter the mortgage term"
+                title="Mortgage Term"
+                placeholder=""
+                required
+                value="25"
+              />
+              <span class="input-symbol"></span>
+              <span class="error-message">This field is required</span>
+            </div>
+            <div class="interest-rate-input-wrap input-group">
+              <label for="interest-rate">Interest Rate</label>
+              <input
+                type="number"
+                id="interest-rate-input"
+                name="interest-rate"
+                aria-label="Enter the interest rate"
+                title="Interest Rate"
+                placeholder=""
+                value="5.25"
+                required
+              />
+              <span class="input-symbol"></span>
+              <span class="error-message">This field is required</span>
+            </div>
+          </div>
+
+          <div class="calculator-selector">
+            <fieldset>
+              <legend>Mortgage Type</legend>
+              <div class="radio-wrapper">
+                <input
+                  type="radio"
+                  id="repayment-radio"
+                  name="calculator-mode"
+                  value="repayment"
+                  required
+                />
+                <span class="custom-radio-checkmark"></span>
+                <label for="repayment-radio">Repayment</label>
+              </div>
+
+              <div class="radio-wrapper">
+                <input
+                  type="radio"
+                  id="interest-only-radio"
+                  name="calculator-mode"
+                  value="interest-only"
+                />
+                <span class="custom-radio-checkmark"></span>
+                <label for="interest-only-radio">Interest Only</label>
+              </div>
+              <span class="error-message">This field is required</span>
+            </fieldset>
+            <button type="submit" class="calculate-button">
+              <img src="./images/icon-calculator.svg" alt="" /> Calculate
+              Repayments
+            </button>
+          </div>
+        </form>
+      </section>
+      <section class="results-container default">
+        <img src="./images/illustration-empty.svg" alt="" />
+        <h1>Results shown here</h1>
+        <p>
+          Complete the form and click "calculate repayments" to see what your
+          monthly repaymnets would be.
+        </p>
+      </section>
+      <section class="results-container live-results displayNone">
+        <h1>Your results</h1>
+        <p>
+          Your results are shown below based on the informatoin you provided. To
+          adjust the results edit the form and click "calculate repayments"
+          again.
+        </p>
+
+        <div class="results-wrap">
+          <div class="monthly-repayments">
+            <p>Your monthly repayments</p>
+            <h3 class="monthly-amount"></h3>
+          </div>
+          <div class="total-term">
+            <p>Total you'll repay over the term</p>
+            <h3 class="term-amount"></h3>
+          </div>
+
+          <div class="interest-only-result displayNone">
+            <div class="total-term">
+              <p>Total interest you'll pay monthly:</p>
+              <h3 class="interest-amount"></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="assets/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
