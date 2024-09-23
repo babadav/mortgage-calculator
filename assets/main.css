@@ -34,6 +34,10 @@ body {
   }
 }
 
+h1 {
+  color: hsl(202, 86%, 94%);
+}
+
 .displayNone {
   display: none;
 }
@@ -88,6 +92,7 @@ body {
 .calculator-header h1 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  color: hsl(202, 55%, 16%);
 }
 .calculator-header .clear-all {
   background-color: transparent;
@@ -115,7 +120,7 @@ form label {
   margin-bottom: 1.2rem;
 }
 form input {
-  border: 0.1rem solid hsl(200, 24%, 40%);
+  border: 0.1rem solid #7e8d97;
   border-radius: 0.5rem;
   font-weight: 900;
   height: 5rem;
@@ -251,6 +256,11 @@ input[type=number] {
   padding-left: 4rem;
   width: 30rem;
 }
+@media screen and (min-width: 1024px) {
+  .calculator-selector button {
+    align-self: flex-start;
+  }
+}
 .calculator-selector button img {
   margin-right: 1rem;
   width: 2.6rem;
@@ -258,13 +268,15 @@ input[type=number] {
 
 fieldset {
   border: none;
+  margin-bottom: 3rem;
 }
 @media screen and (min-width: 1024px) {
   fieldset {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
 }
-fieldset legend {
+
+legend {
   color: hsl(200, 24%, 40%);
   font-size: 1.6rem;
   font-weight: 500;
@@ -273,7 +285,7 @@ fieldset legend {
 
 .radio-wrapper {
   align-items: center;
-  border: 0.1rem solid hsl(200, 24%, 40%);
+  border: 0.1rem solid #7e8d97;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: row;
@@ -355,6 +367,7 @@ fieldset legend {
 .results-container p {
   line-height: 1.6;
   margin-bottom: 5rem;
+  color: hsl(203, 41%, 72%);
 }
 
 .default {
@@ -374,6 +387,11 @@ fieldset legend {
   max-width: 30rem;
   text-align: center;
 }
+@media screen and (min-width: 1024px) {
+  .default p {
+    max-width: initial;
+  }
+}
 
 .live-results {
   padding-bottom: 6rem;
@@ -389,7 +407,6 @@ fieldset legend {
   grid-template-rows: repeat(2, 1fr);
 }
 .results-wrap p {
-  color: hsl(200, 26%, 54%);
   font-size: 1.8rem;
   margin-bottom: 1.2rem;
 }

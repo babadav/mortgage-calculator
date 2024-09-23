@@ -192,7 +192,6 @@ textInputs.forEach((input) => {
   input.addEventListener("keyup", () => {
 	setTimeout(() => {
 	  handleMortgageCalculations();
-	  handleErrorState();
 	}, 300);
   });
 });
