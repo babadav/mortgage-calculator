@@ -455,8 +455,4 @@ input[type=radio]:focus + .custom-radio-checkmark {
 }
 .total-term h3 {
   font-size: 3rem;
-}
-
-input:-internal-autofill-selected {
-  background-color: hsl(0, 0%, 100%) !important;
 }/*# sourceMappingURL=main.css.map */
