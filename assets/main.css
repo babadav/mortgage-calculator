@@ -94,8 +94,8 @@ h1 {
 .clear-all {
   background-color: transparent;
   border: none;
-  border-bottom: 0.1rem solid #7e8d97;
-  color: #7e8d97;
+  border-bottom: 0.1rem solid hsl(200, 26%, 54%);
+  color: hsl(200, 26%, 54%);
   cursor: pointer;
   margin-bottom: 3rem;
 }
