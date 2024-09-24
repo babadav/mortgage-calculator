@@ -29,26 +29,20 @@
 				<form action="">
 					<div class="mortgage-amount-input-wrap input-group">
 						<label for="mortgage-amount-input">Mortgage Amount</label>
-						<input type="number" id="mortgage-amount-input" name="mortgage-amount"
-							aria-label="Enter the mortgage amount in pounds" title="Mortgage Amount" placeholder=""
-							required value="" />
+						<input type="number" id="mortgage-amount-input" name="mortgage-amount" title="Mortgage Amount" required />
 						<span class="input-symbol">&pound;</span>
 						<span class="error-message">This field is required</span>
 					</div>
 					<div class="double-input-wrap">
 						<div class="mortgage-term-input-wrap input-group">
 							<label for="mortgage-term">Mortgage Term</label>
-							<input type="number" id="mortgage-term-input" name="mortgage-term"
-								aria-label="Enter the mortgage term" title="Mortgage Term" placeholder="" required
-								value="" />
+							<input type="number" id="mortgage-term-input" name="mortgage-term" title="Mortgage Term" required />
 							<span class="input-symbol">years</span>
 							<span class="error-message">This field is required</span>
 						</div>
 						<div class="interest-rate-input-wrap input-group">
 							<label for="interest-rate">Interest Rate</label>
-							<input type="number" id="interest-rate-input" name="interest-rate"
-								aria-label="Enter the interest rate" title="Interest Rate" placeholder="" value=""
-								required />
+							<input type="number" id="interest-rate-input" name="interest-rate" title="Interest Rate" required />
 							<span class="input-symbol">%</span>
 							<span class="error-message">This field is required</span>
 						</div>
@@ -73,7 +67,7 @@
 							<span class="error-message">This field is required</span>
 						</fieldset>
 						<button type="submit" class="calculate-button">
-							<img src="./images/icon-calculator.svg" alt="" /> Calculate
+							<img src="./images/icon-calculator.svg" alt="calculator icon blah blah blah" /> Calculate
 							Repayments
 						</button>
 					</div>
@@ -82,14 +76,14 @@
 
 		</div>
 		<section class="results-container default">
-			<img src="./images/illustration-empty.svg" alt="" />
+			<img src="./images/illustration-empty.svg" alt="calculator icon blah blah blah" />
 			<h1>Results shown here</h1>
 			<p>
 				Complete the form and click "calculate repayments" to see what your
 				monthly repaymnets would be.
 			</p>
 		</section>
-		<section class="results-container live-results displayNone">
+		<section class="results-container live-results displayNone" aria-live="polite">
 			<h1>Your results</h1>
 			<p>
 				Your results are shown below based on the informatoin you provided. To
